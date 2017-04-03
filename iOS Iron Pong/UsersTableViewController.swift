@@ -123,7 +123,7 @@ class UsersTableViewController: UITableViewController {
         let username = self.users[indexPath.row]
         
         cell.textLabel?.text = username.nickName
-        cell.detailTextLabel?.text = String(username.wins!)
+        cell.detailTextLabel?.text = "Wins: \(String(Int(username.wins!)))"
         
         cell.textLabel?.textColor = UIColor.white
         cell.detailTextLabel?.textColor = UIColor.white
